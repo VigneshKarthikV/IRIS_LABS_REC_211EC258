@@ -1,4 +1,5 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -22,12 +23,12 @@
 
 module q7_shiftaddmul_solution1(start, clk, reset, i_B, i_Q, stop, o_A);
 parameter n = 8;
-input start;
-input clk;
-input reset;
-input [n-1:0]i_B;
-input [n-1:0]i_Q;
-output stop;
+input wire start;
+input wire clk;
+input wire reset;
+input wire [n-1:0]i_B;
+input wire [n-1:0]i_Q;
+output wire stop;
 output [(n*2)-1:0]o_A;
 reg stop_reg;
 reg [(n*2)-1:0]A;
