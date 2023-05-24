@@ -4,7 +4,7 @@ Repository for Verilog codes for IRIS Lab Recs
 
 Output for q3_dff
 
-![Picture4](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/909ca2d9-840c-45ad-bddb-07309d22bba3)
+![image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/f36aaa96-997f-4389-a12f-e8a21a1acc0a)
 
 Output for q6_seqdetect
 
