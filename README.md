@@ -1,6 +1,6 @@
 # IRIS_LAB_REC_211EC258
 Repository for Verilog codes for IRIS Lab Recs
-![Picture3](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/1e553d37-8d08-4db0-ab5d-06dbbf1e9ed5)
+![image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/52b15dc7-a185-49d9-83b5-5a6998a9925e)
 
 Output for q3_dff
 
@@ -12,5 +12,6 @@ Output for q6_seqdetect
 
 Output for q7_shiftadd_solution1
 
-[image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/2464cd79-4dd1-490e-96da-7b14cdc09f23)
+![image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/2464cd79-4dd1-490e-96da-7b14cdc09f23)
+
 Output for q7_shiftadd_solution2
