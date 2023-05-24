@@ -8,9 +8,9 @@ Output for q3_dff
 
 Output for q6_seqdetect
 
-![Picture2](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/297dce69-28a4-4e33-8b87-025ac42d0839)
+![image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/f9c8428b-7827-4cec-a348-3a011250cc36)
 
 Output for q7_shiftadd_solution1
 
-![Picture1]![image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/2464cd79-4dd1-490e-96da-7b14cdc09f23)
+[image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/2464cd79-4dd1-490e-96da-7b14cdc09f23)
 Output for q7_shiftadd_solution2
