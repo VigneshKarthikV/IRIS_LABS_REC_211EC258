@@ -47,8 +47,8 @@ input wire [n-1:0]input_b;
 input wire [n-1:0]input_q;
 output wire q0;
 output reg [(n*2)-1:0]output_a;
-reg [n-1:0]ALU_b;
-reg [n-1:0]ALU_q;
+reg [(n*2)-1:0]ALU_b;
+reg [(n*2)-1:0]ALU_q;
 assign q0 = ALU_q[0];
 
 always @(posedge clk or posedge reset) begin
