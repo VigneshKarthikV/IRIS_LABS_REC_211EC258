@@ -4,9 +4,9 @@ Repository for Verilog codes for IRIS Lab Recs
 
 Output for q3_dff
 
-State diagram for q6_seqdetect
-
 ![Picture5](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/968160c9-1f65-4d4e-a9d0-84102c3cea59)
+
+State diagram for q6_seqdetect
 
 ![image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/f36aaa96-997f-4389-a12f-e8a21a1acc0a)
 
