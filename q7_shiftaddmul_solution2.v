@@ -1,4 +1,5 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -20,32 +21,33 @@
 //////////////////////////////////////////////////////////////////////////////////
 module q7_shiftaddmul_solution2(clk, reset, start, b_in, q_in, stop, a_out);
 parameter n = 8;
-input clk;
-input reset;
-input start;
-input [n-1:0]b_in;
-input [n-1:0]q_in;
-output stop;
-output [(n*2)-1:0]a_out;
-wire q0;
+input wire clk;
+input wire reset;
+input wire start;
+input wire [n-1:0]b_in;
+input wire [n-1:0]q_in;
+output wire stop;
+output wire [(n*2)-1:0]a_out;
+wire add;
 wire shift;
+wire q0;
 wire load;
 Control_Unit M0_Controller(clk, start, reset, q0, add, shift, load, stop);
 Datapath_Unit M1_Datapath(clk, reset, shift, add, load, b_in, q_in, q0, a_out);
 endmodule
 
 module Datapath_Unit(clk, reset, shift, add, load, input_b, input_q, q0, output_a);
-parameter n = 4;
-input clk;
-input reset;
-input shift;
-input add;
-input load;
-input [n-1:0]input_b;
-input [n-1:0]input_q;
-output q0;
+parameter n = 8;
+input wire clk;
+input wire reset;
+input wire shift; // Control signal to shift registers
+input wire add;   // Control signal to add the two registers
+input wire load;  // Control signal to load the value
+input wire [n-1:0]input_b;
+input wire [n-1:0]input_q;
+output wire q0;
 output reg [(n*2)-1:0]output_a;
-reg [(n*2)-1:0]ALU_b;
+reg [n-1:0]ALU_b;
 reg [n-1:0]ALU_q;
 assign q0 = ALU_q[0];
 
@@ -73,11 +75,11 @@ end
 endmodule
 
 module Control_Unit(clk, start, reset, q0, add, shift, load, stop);
-parameter n = 4;
-input clk;
-input start;
-input reset;
-input q0;
+parameter n = 8;
+input wire clk;
+input wire start;
+input wire reset;
+input wire q0;
 output reg add;
 output reg shift;
 output reg load;
@@ -95,7 +97,6 @@ ps <= ns;
 end
 end
 always @(ps, start, q0) begin
-//stop = 0;
 shift = 0;
 add = 0;
 load = 0;

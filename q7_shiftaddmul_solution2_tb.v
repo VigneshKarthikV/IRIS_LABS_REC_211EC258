@@ -1,4 +1,5 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
+`default_nettype none
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer:
@@ -22,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module q7_shiftaddmul_solution2_tb;
-   parameter n = 4;
+   parameter n = 8;
 	reg [n-1:0] b_in;
 	reg [n-1:0] q_in;
 	reg clk;
@@ -41,12 +42,11 @@ q7_shiftaddmul_solution2 dut1 (.clk(clk), .reset(reset), .start(start), .b_in(b_
 		b_in = 0;
 		q_in = 0;
 		clk = 0;
-//		start = 0;
 #10		reset = 1;
 #75		reset = 0;
 #25		start = 1;
-        b_in = 15;
-		q_in = 15;
+        b_in = 8'h0f;
+		q_in = 8'h0e;
 #100    start = 0;
 		#(100*n)
 		$finish;
