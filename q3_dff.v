@@ -1,4 +1,5 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,9 +22,9 @@
 
 
 module q3_dff(clk, reset, d, q);
-input clk;
-input reset;
-input d;
+input wire clk;
+input wire reset;
+input wire d;
 output reg q;
 
 always @(posedge clk or negedge reset) begin
