@@ -1,4 +1,5 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
+`default_nettype none
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,10 +22,10 @@
 
 
 module q6_seqdetect(clk, reset, x, y);
-input clk;
-input reset;
-input x;
-output y;
+input wire clk;
+input wire reset;
+input wire x; 
+output wire y;
 reg [2:0]ps, ns;
 reg y_out;
 parameter s0 = 0, s1 = 1, s2 = 2, s3 = 3, s4 = 4;
