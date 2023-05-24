@@ -12,6 +12,5 @@ Output for q6_seqdetect
 
 Output for q7_shiftadd_solution1
 
-![Picture1](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/a402fd08-0c4c-482a-800e-cc762535f588)
-
+![Picture1]![image](https://github.com/VigneshKarthikV/IRIS_LABS_REC_211EC258/assets/117422748/2464cd79-4dd1-490e-96da-7b14cdc09f23)
 Output for q7_shiftadd_solution2
